@@ -2,24 +2,30 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Time = styled.span`
-  font-size: 25px;
+  font-size: 27px;
   color: black;
+  opacity: 0.9
+  text-align: ${props => props.right && 'right'};
 `
 
 const City = styled.span`
-  font-size: 13px;
+  font-size: 11px;
+  font-weight: bold;
   color: black;
-  opacity: 0.9;
+  opacity: 0.7;
+  text-align: ${props => props.right && 'right'};  
 `
 
 const Date = styled.span`
   font-size: 11px;
   color: black;
-  opaciti: 0.8;
+  opacity: 0.5;
+  text-align: ${props => props.right && 'right'};
+  
 `
 
 const Wrapper = styled.div`
-  width: 150px;
+  width: 115px;
   display: flex;
   flex-direction: column;
   &>span:first-child{
@@ -30,10 +36,10 @@ const Wrapper = styled.div`
   }
 `
 
-export const RouteTicket = ({time, city, date}) => (
+export const RouteTicket = ({time, city, date, right}) => (
   <Wrapper>
-    <Time>{time}</Time>
-    <City>{city}</City>
-    <Date>{date}</Date>
+    <Time right={right}>{time}</Time>
+    <City right={right}>{city}</City>
+    <Date right={right}>{date}</Date>
   </Wrapper> 
 ) 
