@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import { LeftSideTicket } from './ui/molecules/left-side-ticket'
-import { RightSideTicket } from './ui/molecules/right-side-ticket'
+import { Ticket } from './ui/organisms/ticket'
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <RightSideTicket
+      <Ticket
+        price={'23200'}
         timeFrom={'09:25'}
         cityFrom={'VVO, Владивосток'}
         dateFrom={'9 окт 2016, Пт'}
@@ -16,7 +16,7 @@ class App extends Component {
         cityTo={'VVO, Владивосток'}
         dateTo={'9 окт 2016, Пт'}
       >
-      </RightSideTicket>
+      </Ticket>
     );
   }
 }

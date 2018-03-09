@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Transfer = styled.span`
   position: relative;
-  padding-top: 4px;
+  padding-top: 5px;
   font-size: 9px;
   color: gray;
   opacity: 0.7;
