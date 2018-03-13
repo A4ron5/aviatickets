@@ -22,6 +22,6 @@ export const RightSideTicket = ({
   <Wrapper>
     <RouteTicket time={timeFrom} city={cityFrom} date={dateFrom} />
     <Transfer>{transfer} ПЕРЕСАДОК</Transfer>
-    <RouteTicket right={true} time={timeTo} city={cityTo} date={dateTo} />
+    <RouteTicket right time={timeTo} city={cityTo} date={dateTo} />
   </Wrapper>
 );

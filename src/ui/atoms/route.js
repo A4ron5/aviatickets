@@ -26,7 +26,10 @@ const Date = styled.span`
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  ${(Time, City)} {
+  ${City} {
+    margin-bottom: 5px;
+  }
+  ${Time} {
     margin-bottom: 5px;
   }
 `;

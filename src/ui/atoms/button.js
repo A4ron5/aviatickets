@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React from "react";
 
 const ButtonWrapper = styled.button`
-  padding: 5px 30px;
+  padding: 7px 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
