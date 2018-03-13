@@ -19,7 +19,7 @@ export class Tickets extends React.Component {
           dateFrom={item.departure_date}
           transfer={item.stops}
           timeTo={item.arrival_time}
-          cityTo={`${item.destination},${item.destination_name}`}
+          cityTo={`${item.destination_name},${item.destination}`}
           dateTo={item.arrival_date}
         />
       );
