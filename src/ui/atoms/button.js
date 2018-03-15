@@ -9,7 +9,7 @@ const ButtonWrapper = styled.button`
   align-items: center;
   cursor: pointer;
   border: none;
-  border-radius: 5px;
+  border-radius: 4px;
   outline: none;
   background-color: #ff6d00;
   color: #fff;
