@@ -9,7 +9,8 @@ const CustomCheckbox = styled.span`
   width: 20px;
   background-color: #f2fcff;
   border: 1px solid #0cb2e1;
-  border-radius: 5px;
+  border-radius: 4px;
+  margin: 10px 10px;
   &::after {
     content: "";
     position: absolute;
@@ -28,12 +29,15 @@ const Check = styled.input.attrs({
 
 const Label = styled.label`
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 100%;
+  padding: 7px 5px;
   position: relative;
   cursor: pointer;
   font-size: 22px;
   user-select: none;
+  &:hover {
+    background: #f1fcff;
+  }
   ${Check} {
     position: absolute;
     opacity: 0;
@@ -53,9 +57,16 @@ const Label = styled.label`
   }
 `;
 
+const CheckboxTitle = styled.span`
+  padding-left: 35px;
+  font-size: 16px;
+  opacity: 0.8;
+`;
+
 export const Checkbox = ({ checked }) => (
   <Label>
     <Check checked={checked} />
     <CustomCheckbox />
+    <CheckboxTitle>Без пересадок</CheckboxTitle>
   </Label>
 );
