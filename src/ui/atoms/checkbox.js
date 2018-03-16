@@ -3,14 +3,14 @@ import styled from "styled-components";
 
 const CustomCheckbox = styled.span`
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
   height: 20px;
   width: 20px;
   background-color: #f2fcff;
   border: 1px solid #0cb2e1;
   border-radius: 4px;
-  margin: 10px 10px;
   &::after {
     content: "";
     position: absolute;
@@ -28,7 +28,7 @@ const Check = styled.input.attrs({
 `;
 
 const Label = styled.label`
-  display: block;
+  display: flex;
   width: 100%;
   padding: 7px 5px;
   position: relative;
@@ -58,15 +58,22 @@ const Label = styled.label`
 `;
 
 const CheckboxTitle = styled.span`
-  padding-left: 35px;
-  font-size: 16px;
+  padding-left: 40px;
+  font-size: 14px;
   opacity: 0.8;
+  line-height: 20px;
 `;
 
-export const Checkbox = ({ checked }) => (
-  <Label>
-    <Check checked={checked} />
-    <CustomCheckbox />
-    <CheckboxTitle>Без пересадок</CheckboxTitle>
-  </Label>
+const Wrapper = styled.div`
+  width: 250px;
+`;
+
+export const Checkbox = ({ checked, titleName }) => (
+  <Wrapper>
+    <Label>
+      <Check checked={checked} />
+      <CustomCheckbox />
+      <CheckboxTitle>{titleName}</CheckboxTitle>
+    </Label>
+  </Wrapper>
 );

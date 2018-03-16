@@ -7,8 +7,13 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
   width: 480px;
-  box-shadow: 0 0 5px gray;
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
+  background-color: white;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 export const Ticket = ({
