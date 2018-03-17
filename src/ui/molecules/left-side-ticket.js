@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Button, AirlaneImg } from "../atoms";
+import Img from "./airlanes.png";
 
 const Wrapper = styled.div`
   position: relative;
@@ -24,7 +25,7 @@ const Wrapper = styled.div`
 
 export const LeftSideTicket = ({ price }) => (
   <Wrapper>
-    <AirlaneImg alt={" "} />
+    <AirlaneImg alt={" "} src={Img} />
     <Button price={price} />
   </Wrapper>
 );
