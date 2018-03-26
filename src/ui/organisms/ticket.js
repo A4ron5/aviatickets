@@ -6,7 +6,6 @@ import { RightSideTicket } from "../molecules";
 const Wrapper = styled.div`
   display: flex;
   flex-direction: row;
-  width: 480px;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05);
   border-radius: 5px;
   background-color: white;

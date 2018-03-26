@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 20px 20px;
-  width: 310px;
 `;
 
 export const RightSideTicket = ({
