@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { Tickets } from "./features/ticket-list/tickets";
-import { Checkbox } from "./ui/atoms";
 import { List } from "./ui/molecules";
 
 const Wrapper = styled.div`

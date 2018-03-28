@@ -3,14 +3,18 @@ import { Ticket } from "../../ui/organisms";
 import data from "./tickets.json";
 
 export class Tickets extends React.Component {
-  state = {
-    ticketsItem: []
-  };
-
-  componentDidMount() {}
 
   render() {
-    const tickets = data.tickets.map(item => {
+    const tickets = data.tickets;
+    tickets.sort((a, b) => {
+      if(a.price > b.price) {
+        return 1;
+      } else if(a.price < b.price) {
+        return -1;
+      }
+      return 0;
+    })
+    const ticketsRender = tickets.map(item => {
       return (
         <Ticket
           price={item.price}
@@ -24,6 +28,6 @@ export class Tickets extends React.Component {
         />
       );
     });
-    return <React.Fragment>{tickets}</React.Fragment>;
+    return <React.Fragment>{ticketsRender}</React.Fragment>;
   }
 }
