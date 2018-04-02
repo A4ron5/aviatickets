@@ -8,8 +8,7 @@ const Wrapper = styled.div`
 
 const Header = styled.span`
   width: 100%;
-  padding: 10px 0;
-  padding-left: 17px;
+  padding: 10px 20px;
   font-size: 14px;
   font-weight: bold;
   color: gray;
@@ -23,6 +22,9 @@ const FilterWrapper = styled.div`
   background-color: white;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05);
   height: 220px;
+  @media (max-width: 800px) {
+    
+  }
 `;
 
 export const List = ({

@@ -65,7 +65,6 @@ const CheckboxTitle = styled.span`
 `;
 
 const Wrapper = styled.div`
-  width: 250px;
 `;
 
 export const Checkbox = ({ checked, titleName }) => (

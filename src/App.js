@@ -8,7 +8,10 @@ const Wrapper = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   padding-top: 100px;
-  width: 750px;
+  width: 735px;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const TicketsWrapper = styled.div``;

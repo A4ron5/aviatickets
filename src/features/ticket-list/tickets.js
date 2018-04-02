@@ -13,8 +13,11 @@ export class Tickets extends React.Component {
         return -1;
       }
       return 0;
+    });
+    const filteredTickets = tickets.filter((item) => {
+      return item.stops !== -1
     })
-    const ticketsRender = tickets.map(item => {
+    const ticketsRender = filteredTickets.map(item => {
       return (
         <Ticket
           price={item.price}
