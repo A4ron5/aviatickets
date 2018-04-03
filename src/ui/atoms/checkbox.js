@@ -44,8 +44,8 @@ const Label = styled.label`
     cursor: pointer;
   }
   ${CustomCheckbox}::after {
-    left: 7px;
-    top: 3px;
+    left: 6px;
+    top: 2px;
     width: 5px;
     height: 10px;
     border: solid #0cb2e1;
