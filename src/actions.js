@@ -1,19 +1,24 @@
-export const all = () => ({
-  type: 'SELECT_ALL'
+export const all = (all) => ({
+  type: 'SELECT_ALL',
+  all
 })
 
-export const nullStops = () => ({
-  type: 'SELECT_NULL'
+export const withoutStops = (zero) => ({
+  type: 'SELECT_NULL',
+  zero
 })
 
-export const oneStop = () => ({
-  type: 'SELECT_ONE'
+export const oneStop = (one) => ({
+  type: 'SELECT_ONE',
+  one
 })
 
-export const twoStops = () => ({
-  type: 'SELECT_TWO'
+export const twoStops = (two) => ({
+  type: 'SELECT_TWO',
+  two
 })
 
-export const threeStops = () => ({
-  type: 'SELECT_THREE'
+export const threeStops = (three) => ({
+  type: 'SELECT_THREE',
+  three
 })
