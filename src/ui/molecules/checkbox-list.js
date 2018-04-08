@@ -32,16 +32,17 @@ export const List = ({
   withoutTransf,
   oneTransf,
   twoTransf,
-  threeTransf
+  threeTransf,
+  checkHandler
 }) => (
   <FilterWrapper>
     <Header>Количество пересадок</Header>
     <Wrapper>
-      <Checkbox checked={checkedAll} titleName={"Все"} />
-      <Checkbox checked={withoutTransf} titleName={"Без пересадок"} />
-      <Checkbox checked={oneTransf} titleName={"1 пересадка"} />
-      <Checkbox checked={twoTransf} titleName={"2 пересадки"} />
-      <Checkbox checked={threeTransf} titleName={"3 пересадки"} />
+      <Checkbox onClick={checkHandler} titleName={"Все"} name="All"/>
+      <Checkbox titleName={"Без пересадок"} />
+      <Checkbox titleName={"1 пересадка"} />
+      <Checkbox titleName={"2 пересадки"} />
+      <Checkbox titleName={"3 пересадки"} />
     </Wrapper>
   </FilterWrapper>
 );
