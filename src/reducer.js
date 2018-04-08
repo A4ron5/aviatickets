@@ -1,6 +1,6 @@
 const initialState = {
   all: false,
-  null: false,
+  zero: false,
   one: false,
   two: false,
   three: false
@@ -16,7 +16,7 @@ export function logic (state = initialState, action) {
     case 'SELECT_NULL':
       return {
         ...state,
-        null: action.null
+        zero: action.zero
       }
     case 'SELECT_ONE':
       return {
@@ -33,5 +33,7 @@ export function logic (state = initialState, action) {
         ...state,
         three: action.three
       }
+    default: 
+      return state
   }
 }
