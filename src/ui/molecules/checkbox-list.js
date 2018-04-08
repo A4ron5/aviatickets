@@ -22,9 +22,6 @@ const FilterWrapper = styled.div`
   background-color: white;
   box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.05);
   height: 220px;
-  @media (max-width: 800px) {
-    
-  }
 `;
 
 export const List = ({
@@ -33,16 +30,20 @@ export const List = ({
   oneTransf,
   twoTransf,
   threeTransf,
-  checkHandler
+  allCheckHandler,
+  zeroCheckHandler,
+  oneCheckHandler,
+  twoCheckHandler,
+  threeCheckHandler
 }) => (
   <FilterWrapper>
     <Header>Количество пересадок</Header>
     <Wrapper>
-      <Checkbox onClick={checkHandler} titleName={"Все"} name="All"/>
-      <Checkbox titleName={"Без пересадок"} />
-      <Checkbox titleName={"1 пересадка"} />
-      <Checkbox titleName={"2 пересадки"} />
-      <Checkbox titleName={"3 пересадки"} />
+      <Checkbox onClick={allCheckHandler} titleName={"Все"} name="All"/>
+      <Checkbox onClick={zeroCheckHandler} titleName={"Без пересадок"} />
+      <Checkbox onClick={oneCheckHandler} titleName={"1 пересадка"} />
+      <Checkbox onClick={twoCheckHandler} titleName={"2 пересадки"} />
+      <Checkbox onClick={threeCheckHandler} titleName={"3 пересадки"} />
     </Wrapper>
   </FilterWrapper>
 );

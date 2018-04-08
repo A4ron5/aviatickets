@@ -67,10 +67,10 @@ const CheckboxTitle = styled.span`
 const Wrapper = styled.div`
 `;
 
-export const Checkbox = ({ checked, titleName }) => (
+export const Checkbox = ({ titleName, onClick }) => (
   <Wrapper>
     <Label>
-      <Check checked={checked} />
+      <Check onClick={onClick} />
       <CustomCheckbox />
       <CheckboxTitle>{titleName}</CheckboxTitle>
     </Label>
