@@ -1,6 +1,7 @@
 import React from "react";
 import { Ticket } from "../../ui/organisms";
 import data from "./tickets.json";
+import uniqid from 'uniqid'
 
 export class Tickets extends React.Component {
 
@@ -20,6 +21,7 @@ export class Tickets extends React.Component {
     const ticketsRender = filteredTickets.map(item => {
       return (
         <Ticket
+          key={uniqid()}
           price={item.price}
           timeFrom={item.departure_time}
           cityFrom={`${item.origin},${item.origin_name}`}
